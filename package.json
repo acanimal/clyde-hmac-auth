@@ -1,0 +1,38 @@
+{
+  "author": "Antonio Santiago <asantiagop@gmail.com> (http://acuriousanimal.com/blog)",
+  "name": "clyde-hmac-auth",
+  "homepage": "https://github.com/acanimal/clyde-hmac-auth",
+  "description": "HMAC authentication filter for Clyde API gateway",
+  "keywords": [
+    "clyde",
+    "filter",
+    "hmac",
+    "authentication"
+  ],
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/acanimal/clyde-hmac-auth.git"
+  },
+  "main": "./lib/index.js",
+  "directories": {
+    "lib": "./lib"
+  },
+  "license": "MIT",
+  "scripts": {
+    "lint": "./node_modules/eslint/bin/eslint.js **/*.js",
+    "test": "./node_modules/mocha/bin/mocha test/**/*.test.js"
+  },
+  "engines": {
+    "node": ">=0.10"
+  },
+  "dependencies": {
+    "hmmac": "^0.2.1"
+  },
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "clyde": "git+https://github.com/acanimal/clyde.git",
+    "eslint": "^0.24.0",
+    "mocha": "^2.2.5"
+  }
+}

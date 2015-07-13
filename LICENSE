@@ -1,32 +1,3 @@
-# HMAC Authentication Filter
-
-Hash-based Message Authentication Code (HMAC) implementation filter for Clyde API gateway.
-
-> Implementation is based on [hmmac](https://github.com/cmawhorter/hmmac) module.
-
-<!-- MarkdownTOC -->
-
-- [Configuration](#configuration)
-  - [Examples](#examples)
-    - [Enable all CORS requests](#enable-all-cors-requests)
-    - [Enable CORS requests only from `myserver` origin and on `provider`](#enable-cors-requests-only-from-myserver-origin-and-on-provider)
-  - [Notes](#notes)
-- [License](#license)
-
-<!-- /MarkdownTOC -->
-
-## Configuration
-
-
-## Examples
-
-## Notes
-
-* It must be configured as a global or provider's prefilter. It has no sense as a postfilter.
-
-
-# License
-
 The MIT License (MIT)
 
 Copyright (c) 2015 Antonio Santiago (@acanimal)
@@ -48,3 +19,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
