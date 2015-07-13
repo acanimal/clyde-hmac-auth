@@ -7,16 +7,13 @@ Hash-based Message Authentication Code (HMAC) implementation filter for Clyde AP
 <!-- MarkdownTOC -->
 
 - [Configuration](#configuration)
-  - [Examples](#examples)
-    - [Enable all CORS requests](#enable-all-cors-requests)
-    - [Enable CORS requests only from `myserver` origin and on `provider`](#enable-cors-requests-only-from-myserver-origin-and-on-provider)
-  - [Notes](#notes)
+    - [Examples](#examples)
+    - [Notes](#notes)
 - [License](#license)
 
 <!-- /MarkdownTOC -->
 
 ## Configuration
-
 
 ## Examples
 
