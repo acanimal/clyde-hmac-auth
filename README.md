@@ -4,18 +4,53 @@ Hash-based Message Authentication Code (HMAC) implementation filter for Clyde AP
 
 > Implementation is based on [hmmac](https://github.com/cmawhorter/hmmac) module.
 
-<!-- MarkdownTOC -->
+<!-- TOC depth:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
-- [Configuration](#configuration)
-    - [Examples](#examples)
-    - [Notes](#notes)
+- [HMAC Authentication Filter](#hmac-authentication-filter)
+	- [Configuration](#configuration)
+	- [Examples](#examples)
+	- [Notes](#notes)
 - [License](#license)
-
-<!-- /MarkdownTOC -->
+<!-- /TOC -->
 
 ## Configuration
 
+Filter accepts the configuration properties:
+
+* `realm`: A string that identifies the authentication realm.
+* `consumers`: An object with the list of `key` properties and `secret` values.
+
 ## Examples
+
+### Securing a provider
+
+Here we are configuring a provider that is accessed for any URL that starts by: `http://CLYDE_SERVER/context`.
+The requests are redirected to `http://some_server` but before HMAC authentication is applied.
+The authentication `realm` is `Provider's Realm` and the only available user is those that signs request with the `keyA` and applying the secret `secretA`.
+
+```javascript
+{
+  "providers": [
+    {
+      "id": "provider",
+      "context": "/context",
+      "target": "https://some_server",
+      "prefilters": [
+        {
+          "id": "hmac-auth",
+          "path": "clyde-hmac-auth",
+          "config": {
+            "realm": "Provider's Realm",
+            "consumers": {
+              "keyA": "secretA"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
+```
 
 ## Notes
 
