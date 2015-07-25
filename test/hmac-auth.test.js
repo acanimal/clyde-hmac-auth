@@ -24,6 +24,7 @@ describe("hmac-auth", function() {
           id: "hmac-auth",
           path: path.join(__dirname, "../lib/index.js"),
           config: {
+            realm: "test",
             consumers: {
               keyA: "secretA"
             }
@@ -53,6 +54,33 @@ describe("hmac-auth", function() {
   after(function() {
     // Stop clyde server
     server.close();
+  });
+
+
+  it("should match the authentication realm", function(done) {
+    var body = "request body";
+    var httpRequest = {
+      host: "localhost",
+      port: port,
+      path: "/foo",
+      method: "GET",
+      headers: {
+        "x-auth-signedheaders": "host; content-type; date",
+        "Content-Type": "text/plain",
+        "Date": new Date().toUTCString()
+      }
+    };
+
+    // Sign request with invalid secret
+    hmmac.sign(httpRequest, {key: "keyA", secret: "bad-secret"});
+
+    // Make request
+    var req = http.request(httpRequest, function(res) {
+      expect(res.headers["www-authenticate"]).contains("realm=\"test\"");
+      expect(res.statusCode).to.be.equal(401);
+      done();
+    });
+    req.end(body);
   });
 
 
