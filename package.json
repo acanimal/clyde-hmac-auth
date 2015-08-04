@@ -1,6 +1,6 @@
 {
   "author": "Antonio Santiago <asantiagop@gmail.com> (http://acuriousanimal.com/blog)",
-  "name": "clyde-hmac-auth",
+  "name": "clydeio-hmac-auth",
   "homepage": "https://github.com/acanimal/clyde-hmac-auth",
   "description": "HMAC authentication filter for Clyde API gateway",
   "keywords": [
@@ -9,7 +9,7 @@
     "hmac",
     "authentication"
   ],
-  "version": "0.1.0",
+  "version": "0.0.1",
   "repository": {
     "type": "git",
     "url": "git://github.com/acanimal/clyde-hmac-auth.git"
@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "chai": "^3.0.0",
-    "clyde": "git+https://github.com/acanimal/clyde.git",
+    "clydeio": "^0.2.0",
     "eslint": "^0.24.0",
     "mocha": "^2.2.5"
   }

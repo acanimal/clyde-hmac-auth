@@ -4,7 +4,7 @@ var path = require("path"),
     expect = require("chai").expect,
     http = require("http"),
     Hmmac = require("hmmac"),
-    clyde = require("clyde");
+    clyde = require("clydeio");
 
 
 describe("hmac-auth", function() {
