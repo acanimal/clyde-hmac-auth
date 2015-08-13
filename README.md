@@ -9,9 +9,9 @@ Hash-based Message Authentication Code (HMAC) implementation filter for Clyde AP
 - [HMAC Authentication Filter](#hmac-authentication-filter)
 	- [Configuration](#configuration)
 	- [Examples](#examples)
+		- [Securing a provider](#securing-a-provider)
 	- [Notes](#notes)
 - [License](#license)
-
 <!-- /TOC -->
 
 ## Configuration
