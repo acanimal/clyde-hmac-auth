@@ -6,13 +6,19 @@ Hash-based Message Authentication Code (HMAC) implementation filter for Clyde AP
 
 <!-- TOC depth:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
+- [Installation](#installation)
 - [HMAC Authentication Filter](#hmac-authentication-filter)
 	- [Configuration](#configuration)
 	- [Examples](#examples)
 		- [Securing a provider](#securing-a-provider)
 	- [Notes](#notes)
 - [License](#license)
+
 <!-- /TOC -->
+
+## Installation
+
+`npm install clydeio-hmac-auth --save`
 
 ## Configuration
 

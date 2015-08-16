@@ -1,10 +1,10 @@
 {
-  "author": "Antonio Santiago <asantiagop@gmail.com> (http://acuriousanimal.com/blog)",
+  "author": "Antonio Santiago <asantiagop@gmail.com> (http://acuriousanimal.com)",
   "name": "clydeio-hmac-auth",
-  "homepage": "https://github.com/clydeio/clyde-hmac-auth",
+  "homepage": "https://github.com/clydeio/clydeio-hmac-auth",
   "description": "HMAC authentication filter for Clyde API gateway",
   "keywords": [
-    "clyde",
+    "clydeio",
     "filter",
     "hmac",
     "authentication"
@@ -12,7 +12,7 @@
   "version": "0.1.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/clydeio/clyde-hmac-auth.git"
+    "url": "https://github.com/clydeio/clydeio-hmac-auth.git"
   },
   "main": "./lib/index.js",
   "directories": {
